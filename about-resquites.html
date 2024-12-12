@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aljun Cerina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+            position: relative;
+            background-color: #252771; /* Banner background color */
+            color: white;
+            padding: 40px 20px; /* Adjust padding for better spacing */
+            border-radius: 10px; /* Optional rounded corners */
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #b9c1c8;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        .header-content p {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #e2ad42;
+        }
+
+        .objective {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .content {
+            margin-top: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills div, .projects div {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-info div {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #555;
+            background-color: #eaeaea;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .skills div, .projects div, .contact-info div {
+                flex: 1 1 100%;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header-content {
+                margin-top: 10px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="aljun-pic.jpg" alt="Aljun's pfp">
+            <div class="header-content">
+                <h1>Cerina, Aljun C.</h1>
+                <p>Student at Asia Pacific College</p>
+                <p class="objective">Manila, National Capital Region, Philippines</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>Second-year Bachelor of Science in Information Technology (BSIT) student at Asia Pacific College, specializing in Mobile and Internet Technologies. Driven by a passion for technology and innovation, with aspirations to make a meaningful impact in the field of cybersecurity.</p>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div>Android Development</div>
+                    <div>Can carry on VALORANT add me: kariman#huh</div>
+                    <div>Bikerist</div>
+                    <div>ChatGpt Prompt Engineer</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div>Project SEAT</div>
+                    <div>SDG Flip Game</div>
+                    <div>Project: Vayne</div>
+                    <div>ABS:PC</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Contact Information</h2>
+                <div class="contact-info">
+                    <div>Email: accerina@student.apc.edu.ph</div>
+                    <div>Phone: (123) 456-7890</div>
+                    <div>LinkedIn: <a href="https://www.linkedin.com/in/aljuncerina/" target="_blank">linkedin.com/in/aljuncerina</a></div>
+                    <div>GitHub: <a href="https://github.com/kar1man" target="_blank">github.com/kar1man</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2024 Aljun Cerina. All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>

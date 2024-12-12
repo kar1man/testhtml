@@ -39,10 +39,10 @@ blockquote {
 #banner {
     position: relative;
     padding: 10px;
-    height: 175px;
+    height: 350px;
     border: 0px;
     color: #fff;
-    background-image: url(bg-banner.jpg);
+    background-image: url(image.png);
     border-radius: 8px;
 }
 #banner h1 {
