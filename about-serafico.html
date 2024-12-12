@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+            position: relative;
+            background-color: #252771; /* Banner background color */
+            color: white;
+            padding: 40px 20px; /* Adjust padding for better spacing */
+            border-radius: 10px; /* Optional rounded corners */
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid white; /* Highlight the image */
+            background-color: #fff; /* White background */
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #ffffff; /* Text color */
+        }
+
+        .header-content p {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #e2ad42; /* Slightly lighter text color */
+        }
+
+        .objective {
+            margin-top: 10px;
+            font-size: smaller;
+            color: #dcdcdc;
+        }
+
+        .content {
+            margin-top: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            color: #e2ad42;
+            border-bottom: 2px solid #e2ad42;
+            display: inline-block;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills div, .projects div {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-info div {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #555;
+            background-color: #eaeaea;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .skills div, .projects div, .contact-info div {
+                flex: 1 1 100%;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header-content {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="vandre.jpg" alt="Your Profile Picture">
+            <div class="header-content">
+                <h1>Serafico, Vandre Adrian C.</h1>
+                <p>Student at Asia Pacific College</p>
+                <p class="objective"> Manila, National Capital Region, Philippines</p></style>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>I am an ambitious IT student specializing in Mobile and Internet Technology, driven by a passion for shaping the future of connectivity. Beyond coding and innovation, I channel my energy into the world of music—both as a performer and a creator. Music isn't just a hobby; it's my fuel for creativity and self-expression, inspiring me to think outside the box in everything I do.</p>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div>Playing Musical Instruments</div>
+                    <div>Can 1v9 on League of Legends</div>
+                    <div>Healthy Mental Stability</div>
+                    <div>Good at finding the right pitch</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div>Project SEAT</div>
+                    <div>SDG Flip Game</div>
+                    <div>Project Zed</div>
+                    <div>Project Master Yi</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Contact Information</h2>
+                <div class="contact-info">
+                    <div>Email: vcserafico3@student.apc.edu.ph</div>
+                    <div>Phone: 09156129561</div>
+                    <div>LinkedIn: <a>https://www.linkedin.com/in/vandre-adrian-serafico-1b461b28a/</a></div>
+                    <div>GitHub: github.com/awitize11</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2024 Your Name. All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>
