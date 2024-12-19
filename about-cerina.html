@@ -13,6 +13,30 @@
             color: #333;
         }
 
+        .nav-container {
+            position: fixed;
+            top: 16px;
+            left: 16px;
+            z-index: 1000;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: #252771; /* Blue background */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px; /* Rounded corners */
+            font-size: 10px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -36,7 +60,8 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
-            border: 3px solid #b9c1c8;
+            border: 3px solid white; /* Highlight the image */
+            background-color: #fff; /* White background */
         }
 
         .header-content {
@@ -46,19 +71,19 @@
         .header-content h1 {
             margin: 0;
             font-size: 2em;
-            color: #ffffff;
+            color: #ffffff; /* Text color */
         }
 
         .header-content p {
             margin: 10px 0;
             font-size: 1.1em;
-            color: #e2ad42;
+            color: #e2ad42; /* Slightly lighter text color */
         }
 
         .objective {
             margin-top: 10px;
-            font-size: 1em;
-            color: #333;
+            font-size: smaller;
+            color: #dcdcdc;
         }
 
         .content {
@@ -71,8 +96,8 @@
 
         .section h2 {
             margin-bottom: 10px;
-            color: #61627d;
-            border-bottom: 2px solid #61627d;
+            color: #e2ad42;
+            border-bottom: 2px solid #e2ad42;
             display: inline-block;
         }
 
@@ -129,11 +154,16 @@
             .header-content {
                 margin-top: 10px;
             }
-            
         }
     </style>
 </head>
 <body>
+    <div class="nav-container">
+        <a href="index.html" class="back-btn">
+            &#8592; Back
+        </a>
+    </div>
+
     <div class="container">
         <div class="header">
             <img src="aljun-pic.jpg" alt="Aljun's pfp">
