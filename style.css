@@ -177,4 +177,31 @@ ul#topnav li a:hover {
     border-radius: 8px;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav-container {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #252771; /* Blue background */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #252771; /* Darker blue on hover */
+}
 
