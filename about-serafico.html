@@ -13,6 +13,30 @@
             color: #333;
         }
 
+        .nav-container {
+            position: fixed;
+            top: 16px;
+            left: 16px;
+            z-index: 1000;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: #252771; /* Blue background */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px; /* Rounded corners */
+            font-size: 10px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -134,13 +158,19 @@
     </style>
 </head>
 <body>
+    <div class="nav-container">
+        <a href="index.html" class="back-btn">
+            &#8592; Back
+        </a>
+    </div>
+
     <div class="container">
         <div class="header">
             <img src="vandre.jpg" alt="Your Profile Picture">
             <div class="header-content">
                 <h1>Serafico, Vandre Adrian C.</h1>
                 <p>Student at Asia Pacific College</p>
-                <p class="objective"> Manila, National Capital Region, Philippines</p></style>
+                <p class="objective">Manila, National Capital Region, Philippines</p>
             </div>
         </div>
 
@@ -175,8 +205,8 @@
                 <div class="contact-info">
                     <div>Email: vcserafico3@student.apc.edu.ph</div>
                     <div>Phone: 09156129561</div>
-                    <div>LinkedIn: <a>https://www.linkedin.com/in/vandre-adrian-serafico-1b461b28a/</a></div>
-                    <div>GitHub: github.com/awitize11</div>
+                    <div>LinkedIn: <a href="https://www.linkedin.com/in/vandre-adrian-serafico-1b461b28a/">https://www.linkedin.com/in/vandre-adrian-serafico-1b461b28a/</a></div>
+                    <div>GitHub: <a href="https://github.com/awitize11">github.com/awitize11</a></div>
                 </div>
             </div>
         </div>
