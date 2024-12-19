@@ -85,6 +85,9 @@ ul#topnav li a:hover {
     background: #cc9;
     color: #111;
 }
+#layout {
+    display: flex;
+}
 #sidebar {
     background: #fff;
     float: right;
