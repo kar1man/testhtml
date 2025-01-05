@@ -36,13 +36,77 @@ blockquote {
     width: 90%;
     border-radius: 8px;
 }
+#wrapper-profile {
+    background: rgb(255, 250, 250);
+    padding: 10px;
+    margin: 1% auto;
+    width: 90%;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+#profile-bg {
+    margin-top: 10px;
+    margin-left: 15px;
+    background-position: center center;
+    padding: 10px;
+    width: 96%;
+    padding-bottom: 20px;
+    height: 280px;
+    border: 0px;
+    color: #fff;
+    background-image: url(/images/bg-test.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    position: relative;
+    text-align: left;
+}
+
+#user-pfp {
+    position: absolute;
+    bottom: -50px;
+    margin-left: 20px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border: 3px solid white;
+    overflow: hidden;
+}
+
+#user-pfp img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+#user-name {
+    margin-left: 20px;
+    margin-top: 380px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#user-deets {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #000000;
+}
+
 #banner {
     position: relative;
     padding: 10px;
+    padding-bottom: 20px;
     height: 350px;
     border: 0px;
     color: #fff;
-    background-image: url(image.png);
+    background-image: url(/images/banner-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
     border-radius: 8px;
 }
 #banner h1 {
@@ -88,6 +152,7 @@ ul#topnav li a:hover {
 #layout {
     display: flex;
 }
+
 #sidebar {
     background: #fff;
     float: right;
@@ -101,6 +166,73 @@ ul#topnav li a:hover {
     width: 200px;
     padding: 15px;
     font-size: 12px;
+}
+
+#sidebar1 {
+    margin-top: 180px;
+    background: #fff;
+    float: right;
+    width: 200px;
+    padding: 15px;
+    font-size: 12px;
+}
+#sidebar-left1 {
+    margin-top: 180px;
+    background: #fff;
+    float: left;
+    width: 200px;
+    padding: 15px;
+    font-size: 12px;
+}
+
+#sidebar1 h2 {
+    background-color: inherit;
+    color: #996;
+    font:  normal 16px Arial, sans-serif;
+    border-bottom: 2px solid rgb(212, 166, 13);
+    padding:  8px 0 5px 0;
+}
+#sidebar-left1 h2 {
+    background-color: inherit;
+    color: #996;
+    font:  normal 16px Arial, sans-serif;
+    border-bottom: 2px solid rgb(212, 166, 13);
+    padding:  8px 0 5px 0;
+}
+
+#sidebar1 ul {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+}
+#sidebar-left1 ul {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+}
+
+#sidebar1 ul li {
+    list-style-position: inside;
+    padding: 0 0 10px 20px;
+    text-indent: 1px;
+}
+
+#sidebar1 ul li a {
+    background-color: inherit;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 2px;
+    display: block;
+}
+
+#sidebar1 ul li a:hover {
+    background-color: #cc9;
+    color: #fff;
+}
+
+#sidebar1 ul li a::before {
+    content: "\00BB";
+    color: #996;
 }
 
 
@@ -160,6 +292,25 @@ ul#topnav li a:hover {
     margin-right: 245px;
 }
 
+#content1 {
+    margin-top: 180px;
+    text-align:left;
+    padding: 20px;
+    margin-right: 245px;
+}
+
+#content1 h1 {
+    font: normal 18px Arial, sans-serif;
+}
+#content1 ul li::before {
+    content: "\00BB";
+    color: #996;
+}
+#content1 ul {
+    list-style: none;
+}
+
+
 #content h1 {
     font: normal 18px Arial, sans-serif;
 }
@@ -171,7 +322,9 @@ ul#topnav li a:hover {
     list-style: none;
 }
 #footer {
+    text-align: center;
     padding: 10px;
+    padding-bottom: 30px;
     height: 20px;
     color: #333;
     font-size: 12px;
