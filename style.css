@@ -106,7 +106,6 @@ blockquote {
     background-image: url(/images/banner-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-
     border-radius: 8px;
 }
 #banner h1 {
@@ -131,8 +130,8 @@ ul#topnav li {
     text-align: center;
 }
 ul#topnav li a {
-background-color: rgb(255, 212, 19);
-    color: rgb(8, 8, 8);
+    background-color: rgb(255, 212, 19);
+    color: #000000;
     border: none;
     display: block;
     margin-right: 5px;
@@ -140,10 +139,13 @@ background-color: rgb(255, 212, 19);
     text-decoration: none;
     font-size: 12px;
 }
-ul#topnav li a.active,
+ul#topnav li a.active {
+    background:black;
+    color: white;
+}
 ul#topnav li a.active:hover {
-    background: #fff;
-    color: #333;
+    background: rgb(71, 70, 70);
+    color: #ffffff;
 }
 ul#topnav li a:hover {
     background: #cc9;
@@ -151,6 +153,15 @@ ul#topnav li a:hover {
 }
 #layout {
     display: flex;
+}
+#squidman {
+    color:white; 
+    font-size:12px; 
+    font-weight:bold
+}
+#squidman:hover{
+    background: #249f9c; 
+    color: rgb(255, 255, 255);
 }
 
 #sidebar {
@@ -361,3 +372,176 @@ body {
     background-color: #252771; /* Darker blue on hover */
 }
 
+#body-index {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(212, 166, 13);
+    color: #333;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF9E6;
+            color: #333;
+        }
+
+        .nav-container {
+            position: fixed;
+            top: 16px;
+            left: 16px;
+            z-index: 1000;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px; /* Rounded corners */
+            font-size: 10px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: rgb(47, 47, 47); /* Darker blue on hover */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            color: white;
+            padding: 40px 20px; /* Adjust padding for better spacing */
+            border-radius: 10px; /* Optional rounded corners */
+            border: 1px solid black;
+            overflow: hidden; /* Ensure content doesn't overflow the blurred background */
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/images/profile-bg-img.png);
+            background-size: cover;
+            background-position: center;
+            filter: blur(3px); /* Apply blur to the background image */
+            z-index: -1; /* Place it behind the content */
+        }
+        
+
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid white; /* Highlight the image */
+            background-color: #fff; /* White background */
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-size: 2.2em;
+            color: black; /* Text color */
+        }
+
+        .header-content p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: black; /* Slightly lighter text color */
+        }
+
+        .objective {
+            margin-top: 10px;
+            font-size: smaller;
+            color: #dcdcdc;
+        }
+
+        .content {
+            margin-top: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            color: black;
+            border-bottom: 2px solid #e2ad42;
+            display: inline-block;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills div, .projects div {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-info div {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #555;
+            background-color: #eaeaea;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .skills div, .projects div, .contact-info div {
+                flex: 1 1 100%;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header-content {
+                margin-top: 10px;
+            }
+        }

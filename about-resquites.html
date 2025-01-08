@@ -4,160 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Lenard Resquites</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/images/seat-logo.png">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        .nav-container {
-            position: fixed;
-            top: 16px;
-            left: 16px;
-            z-index: 1000;
-        }
-
-        .back-btn {
-            display: inline-block;
-            padding: 10px 16px;
-            background-color: #252771; /* Blue background */
-            color: white;
-            text-decoration: none;
-            border-radius: 8px; /* Rounded corners */
-            font-size: 10px;
-            font-weight: bold;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
-            transition: background-color 0.3s ease;
-        }
-
-        .back-btn:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 20px 0;
-            position: relative;
-            background-color: #252771; /* Banner background color */
-            color: white;
-            padding: 40px 20px; /* Adjust padding for better spacing */
-            border-radius: 10px; /* Optional rounded corners */
-        }
-
-        .header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 3px solid white; /* Highlight the image */
-            background-color: #fff; /* White background */
-        }
-
-        .header-content {
-            flex: 1;
-        }
-
-        .header-content h1 {
-            margin: 0;
-            font-size: 2em;
-            color: #ffffff; /* Text color */
-        }
-
-        .header-content p {
-            margin: 10px 0;
-            font-size: 1.1em;
-            color: #e2ad42; /* Slightly lighter text color */
-        }
-
-        .objective {
-            margin-top: 10px;
-            font-size: smaller;
-            color: #dcdcdc;
-        }
-
-        .content {
-            margin-top: 30px;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section h2 {
-            margin-bottom: 10px;
-            color: #e2ad42;
-            border-bottom: 2px solid #e2ad42;
-            display: inline-block;
-        }
-
-        .skills, .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skills div, .projects div {
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex: 1 1 calc(50% - 20px);
-            text-align: center;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .contact-info div {
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex: 1 1 calc(50% - 20px);
-        }
-
-        .footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #555;
-            background-color: #eaeaea;
-            margin-top: 30px;
-        }
-
-        @media (max-width: 600px) {
-            .skills div, .projects div, .contact-info div {
-                flex: 1 1 100%;
-            }
-
-            .header {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .header-content {
-                margin-top: 10px;
-            }
-        }
-    </style>
 </head>
 
 
@@ -167,7 +15,16 @@
             &#8592; Back
         </a>
     </div>
+
     <div class="container">
+        <ul id="topnav">
+            <li><a href="index.html" style="border-top-left-radius: 8px;">ABOUT SEAT</a></li>
+            <li><a href="about-arones.html">Arones</a></li>
+            <li><a href="about-cerina.html">Cerina</a></li>
+            <li><a class="active" href="about-resquites.html">Resquites</a></li>
+            <li><a href="about-serafico.html" style="border-top-right-radius: 8px;">Serafico</a></li>
+        </ul>
+
         <div class="header">
             <img src="/images/resquites-pic.jpg" alt="Lenard's pfp">
             <div class="header-content">
@@ -208,14 +65,14 @@
                 <div class="contact-info">
                     <div>Email: jbresquites@student.apc.edu.ph</div>
                     <div>Phone: (123) 456-7890</div>
-                    <div>LinkedIn: <a href="https://www.linkedin.com/in/john-lenard-resquites-610867288/?originalSubdomain=ph" target="_blank">linkedin.com/in/aljuncerina</a></div>
-                    <div>GitHub: <a href="https://github.com/menace" target="_blank">github.com/kar1man</a></div>
+                    <div>LinkedIn: <a href="https://www.linkedin.com/in/john-lenard-resquites-610867288/?originalSubdomain=ph" target="_blank">linkedin.com/in/lenardresquites</a></div>
+                    <div>GitHub: <a href="https://github.com/menace" target="_blank">github.com/menace</a></div>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            &copy; 2024 John Lenard Resquites. All Rights Reserve.
+            &copy; 2025 John Lenard Resquites. All Rights Reserve.
         </div>
     </div>
 </body>
